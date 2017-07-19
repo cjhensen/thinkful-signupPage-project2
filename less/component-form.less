@@ -1,0 +1,82 @@
+.form-wrap {
+  margin: 40px auto;
+  width: 400px;
+
+  .analogSea-logo {
+    height:35px;
+    width: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .sign-up {
+    background: #fff;
+    border-radius: 3px;
+    padding: 40px;
+
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.42);
+
+    h1 {
+      margin-top: 0;
+      text-align: center;
+      .base-font(@size: 30px, @weight: @weight-regular);
+    }
+
+    fieldset {
+      margin: 0 0 15px 0;
+      padding: 0;
+      border: none;
+
+      label,
+      input {
+        display: block;
+      }
+      label {
+        margin: 15px 0;
+        .base-font(@weight: @weight-semi_bold);
+      }
+      input {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid #e7e7e7;
+        background: #fcfcfc;
+        border-radius: 3px;
+        .base-font;
+      }
+    }
+    button {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #65c575;
+      background: #65c575;
+      border-radius: 3px;
+      .base-font(@size: 16px, @weight: @weight-semi_bold);
+      color: #fff;
+      transition: all .2s ease-in;
+
+      &:hover {
+        background: darken(#65c575, 10%);
+        cursor: pointer;
+        border: 2px solid darken(#65c575, 10%);
+      }
+    }
+    .forgot-password {
+      text-align: center;
+      display: block;
+      margin-top: 10px;
+      .base-font(@size: 12px);
+      text-decoration: underline;
+      color: #8f96a3;
+    }
+  }
+  .login {
+    text-align: center;
+    .base-font(@size: 12px, @weight: @weight-semi_bold);
+    color: #fff;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
